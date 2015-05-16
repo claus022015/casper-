@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/runpy.py", line 170, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.4/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.4/http/server.py", line 1230, in <module>
+    test(HandlerClass=handler_class, port=args.port, bind=args.bind)
+  File "/usr/lib/python3.4/http/server.py", line 1203, in test
+    httpd = ServerClass(server_address, HandlerClass)
+  File "/usr/lib/python3.4/socketserver.py", line 429, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.4/http/server.py", line 133, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.4/socketserver.py", line 440, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
